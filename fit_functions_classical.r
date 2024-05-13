@@ -84,7 +84,7 @@ esm<-ebeta[1]+ebeta[2]*x1+ebeta[3]*x2+ebeta[4]*x3+ebeta[5]*x4
 
 eN<-sum(w)
 etheta<-(sum(rw*ry)+sum(mw*esm[r==0]))/eN
-return(etheta)
+return(list(etheta,esm))
 }
 
 ###3.PMM1 estimator:
@@ -124,7 +124,7 @@ r_id<-apply(d10_2,1,order)[1,]
 
 eN<-sum(w)
 etheta<-(sum(rw*ry)+sum(mw*ry[r_id]))/eN
-return(etheta)
+return(list(etheta,esm))
 }
 
 
