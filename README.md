@@ -6,8 +6,10 @@ Predictive mean matching imputation procedure based on machine learning models, 
    - dat_n500_m1.rds - R data file contains generated data for 200 times simulation of Model 1 and the true value of interest.
    - dat_n500_m2.rds - R data file contains generated data for 200 times simulation of Model 2 and the true value of interest.
    - dat_n500_m3.rds - R data file contains generated data for 200 times simulation of Model 3 and the true value of interest.
+   - dl_prep.r - R code to convert RDS files to csv files for deep learning using Python.
    - est_function.r - R code for imputation using machine learning methods, including GAM, XGBOOST, KNN, and SVM.
    - fit.r - R code for imputation using classical methods, including Naive, Regression, PMM estimator.
+   - fit_functions_deep_learning_all_datasets.py - Python code for processing simulated data of a model.
    - getdata.r - R code contains functions to generate simulation data.
    - run_data_generation.r - R code to implment getdata.r and physically generate the data.
    - run_simulation.r - R code to implment est_function.r and fit.r to analyze generated rds file.
