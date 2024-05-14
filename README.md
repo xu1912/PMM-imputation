@@ -2,13 +2,20 @@
 Predictive mean matching imputation procedure based on machine learning models, using R and Python
 
 ## List of files
-1. README.md - contains instructions and illustrations about everything.
-2. fit_functions_classical.r - contains R code for imputation using classical methods, including Naive, Regression, PMM estimator.
-3. fit_functions_deep_learning.py - contains Python code for imputation using deep learning.
-4. fit_functions_machine_learning.r - contains R code for imputation using machine learning methods, including GAM, XGBOOST, KNN, and SVM.
-5. toy_data.rds - contains an example dataset to test R code.
+1. Simulaiton_data_used_in_paper - folder contains simulation datasets used in paper.
+   - dat_n500_m1.rds - R data file contains generated data for 200 times simulation of Model 1 and the true value of interest.
+   - dat_n500_m2.rds - R data file contains generated data for 200 times simulation of Model 2 and the true value of interest.
+   - dat_n500_m3.rds - R data file contains generated data for 200 times simulation of Model 3 and the true value of interest.
+   - getdata.r - R code contains functions to generate simulation data.
+   - run.r - R code to implment getdata.r and physically generate the data.
+3. README.md - contains instructions and illustrations about everything.
+4. fit_functions_classical.r - contains R code for imputation using classical methods, including Naive, Regression, PMM estimator.
+5. fit_functions_deep_learning.py - contains Python code for imputation using deep learning.
+6. fit_functions_machine_learning.r - contains R code for imputation using machine learning methods, including GAM, XGBOOST, KNN, and SVM.
+7. toy_data.rds - contains an example dataset to test R code.
+8. toy_data.csv - contains an example dataset to test Python code.
 
-## Instruction to run the code
+## Instruction to run the R code
 Here, we shared code related to our submission to JDS. A toy data was provided to test the codes.
 
 To test the R code with the toy data, please download the r code files and toy_data.rds to a local folder.
@@ -41,3 +48,19 @@ In R:
 A screenshot of running previous code is listed here:
 
 ![image](https://github.com/xu1912/PMM-imputation/assets/8320920/5e183d57-6eac-424f-8c84-18e27075a2be)
+
+## Instruction to run the Python code
+To test the Python code with the toy data, please download the python code files and toy_data.csv to a local folder.
+
+Open a command line with Python, Keras, and TensorFlow installed. 
+
+Simply run:
+> python.exe .\fit_functions_deep_learning.py
+
+Screenshot of output:
+>![image](https://github.com/xu1912/PMM-imputation/assets/8320920/57ee659f-0ad3-4349-82f2-21fbc40bee43)
+
+After certain epochs:
+> ![image](https://github.com/xu1912/PMM-imputation/assets/8320920/524b2c26-6c21-464c-bd41-77ff86138801)
+
+The existing code was tested in PowerShell Win10 v1809, Python v3.8.3, and R v4.0.3.
