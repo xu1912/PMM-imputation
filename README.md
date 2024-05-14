@@ -1,6 +1,14 @@
 # PMM-imputation
 Predictive mean matching imputation procedure based on machine learning models, using R and Python
 
+## List of files
+1. README.md - contains instructions and illustrations about everything.
+2. fit_functions_classical.r - contains R code for imputation using classical methods, including Naive, Regression, PMM estimator.
+3. fit_functions_deep_learning.py - contains Python code for imputation using deep learning.
+4. fit_functions_machine_learning.r - contains R code for imputation using machine learning methods, including GAM, XGBOOST, KNN, and SVM.
+5. toy_data.rds - contains an example dataset to test R code.
+
+## Instruction to run the code
 Here, we shared code related to our submission to JDS. A toy data was provided to test the codes.
 
 To test the R code with the toy data, please download the r code files and toy_data.rds to a local folder.
