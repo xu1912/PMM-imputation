@@ -7,7 +7,7 @@ from keras import applications, optimizers
 import numpy as np
 
 # Make sure the path is specific to test 3, 4, 5; relu 3, 4, 5 !!!!!
-data_path = "M:/JDS/"
+data_path = "./"
 
 # Specify number of nodes for each layer
 nd=50
