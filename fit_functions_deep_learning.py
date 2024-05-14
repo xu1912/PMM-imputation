@@ -7,7 +7,7 @@ from keras import applications, optimizers
 import numpy as np
 
 # Make sure the path is specific to test 3, 4, 5; relu 3, 4, 5 !!!!!
-data_path = "M:/JDS/"
+data_path = "./"
 
 ns=200
 bias_array = np.zeros( (ns, 1) )
@@ -24,7 +24,7 @@ sz=[200,500,1000]
 ndv=[50, 100, 200]
 
 for k in sz:   
-    data_path2 = "M:/JDS/dat_n" + str(k) + "_m3/"
+    data_path2 = "./dat_n" + str(k) + "_m3/"
     true_mean=true_mean_v[sz.index(k)]
     if k<300 or k>600:
         continue
