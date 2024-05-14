@@ -3,6 +3,7 @@ Predictive mean matching imputation procedure based on machine learning models, 
 
 ## List of files
 1. Simulaiton_data_used_in_paper - folder contains simulation datasets used in paper.
+   - Readme.md - Brief illustration of files in this folder.
    - dat_n500_m1.rds - R data file contains generated data for 200 times simulation of Model 1 and the true value of interest.
    - dat_n500_m2.rds - R data file contains generated data for 200 times simulation of Model 2 and the true value of interest.
    - dat_n500_m3.rds - R data file contains generated data for 200 times simulation of Model 3 and the true value of interest.
@@ -13,12 +14,12 @@ Predictive mean matching imputation procedure based on machine learning models, 
    - getdata.r - R code contains functions to generate simulation data.
    - run_data_generation.r - R code to implment getdata.r and physically generate the data.
    - run_simulation.r - R code to implment est_function.r and fit.r to analyze generated rds file.
-3. README.md - contains instructions and illustrations about everything.
-4. fit_functions_classical.r - contains R code for imputation using classical methods, including Naive, Regression, PMM estimator.
-5. fit_functions_deep_learning.py - contains Python code for imputation using deep learning.
-6. fit_functions_machine_learning.r - contains R code for imputation using machine learning methods, including GAM, XGBOOST, KNN, and SVM.
-7. toy_data.rds - contains an example dataset to test R code.
-8. toy_data.csv - contains an example dataset to test Python code.
+2. README.md - contains instructions and illustrations about everything.
+3. fit_functions_classical.r - contains R code for imputation of a dataset using classical methods, including Naive, Regression, PMM estimator.
+4. fit_functions_deep_learning.py - contains Python code for imputation a dataset using deep learning.
+5. fit_functions_machine_learning.r - contains R code for imputation a dataset using machine learning methods, including GAM, XGBOOST, KNN, and SVM.
+6. toy_data.rds - contains an example dataset to test R code.
+7. toy_data.csv - contains an example dataset to test Python code.
 
 ## Instruction to run the R code
 Here, we shared code related to our submission to JDS. A toy data was provided to test the codes.
